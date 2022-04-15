@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travel_app/app/pages/home/components/carrousel_home_widget.dart';
 import 'package:travel_app/app/pages/home/components/menu_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -32,11 +33,12 @@ class HomePage extends StatelessWidget {
           ),
         ),
         Container(
-          // padding:  EdgeInsets.only(right: 20),
-          // height: 41.8,
           margin: const EdgeInsets.only(top: 290, left: 20),
           child: MenuHome(),
         ),
+        Container(
+          child: CarrouselHome(),
+        )
       ],
     ));
   }

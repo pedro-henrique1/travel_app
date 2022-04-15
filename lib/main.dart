@@ -7,8 +7,8 @@ void main() {
   runApp(MaterialApp(
     initialRoute: '/',
     routes: {
-      '/': (context) =>  AppWidget(),
-      '/home': (context) => HomePage(),
+      '/': (context) =>  const AppWidget(),
+      '/home': (context) => const HomePage(),
       // '/three': (context) => ThreeScreen(),
     },
   ));
