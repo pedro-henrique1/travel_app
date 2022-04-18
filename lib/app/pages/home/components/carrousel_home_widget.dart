@@ -20,20 +20,25 @@ class _CarrouselHomeState extends State<CarrouselHome> {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 200),
-      alignment: Alignment.center,
+      alignment: Alignment.centerRight,
       child: CarouselSlider.builder(
-        itemCount: imageList.length,
+        itemCount: 15,
         options: CarouselOptions(
           enlargeCenterPage: true,
           height: 300,
         ),
-        itemBuilder: (context, i, id){
+        itemBuilder: (context, i, id) {
           return GestureDetector(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(15),
-              child: Image.network(
-                imageList[i],
-                fit: BoxFit.cover,
+              child: Container(
+                width: 250,
+                height: 260,
+                color: Colors.green,
+                // margin: EdgeInsets.only(right: 200),
+
+                // imageList[i],
+                // fit: BoxFit.cover,
               ),
             ),
           );
