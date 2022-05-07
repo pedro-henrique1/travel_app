@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_app/app/pages/home/home_page.dart';
-import 'package:travel_app/app/pages/login/components/carrousel_widget.dart';
+import 'package:travel_app/app/screen/home/home_page.dart';
+import 'package:travel_app/app/screen/login/components/carrousel_widget.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);

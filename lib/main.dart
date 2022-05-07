@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/app/app_widget.dart';
-import 'package:travel_app/app/pages/home/home_page.dart';
+import 'package:travel_app/app/screen/home/home_page.dart';
 
 // AppWidget()
 void main() {

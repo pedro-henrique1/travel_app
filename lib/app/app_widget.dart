@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/app/pages/login/login_page.dart';
+import 'package:travel_app/app/screen/login/login_page.dart';
 
 class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
