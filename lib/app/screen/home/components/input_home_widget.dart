@@ -1,8 +1,10 @@
 // ignore_for_file: constant_identifier_names, unnecessary_type_check
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_google_places/flutter_google_places.dart';
 import 'package:google_maps_webservice/places.dart';
+import 'package:travel_app/app/shared/config.dart';
 
 class InputHome extends StatefulWidget {
   InputHome({Key? key}) : super(key: key);
@@ -13,7 +15,6 @@ class InputHome extends StatefulWidget {
 
 class _InputHomeState extends State<InputHome> {
   String location = "Search Location";
-  String ApiKey = "AIzaSyBj39LC9wI_IQudnMFCKXYFdNSSfV0DjLs";
 
   // final TextEditingController _controllerCidade = ApiHttpRepository()
   @override
@@ -25,7 +26,8 @@ class _InputHomeState extends State<InputHome> {
           child: InkWell(onTap: () async {
             var place = await PlacesAutocomplete.show(
                 context: context,
-                apiKey: ApiKey,
+                apiKey: dotenv.get('APIGOOGLEKEY',
+                    fallback: "APIGOOGLEKEY not found"),
                 mode: Mode.fullscreen,
                 types: [],
                 strictbounds: false,
